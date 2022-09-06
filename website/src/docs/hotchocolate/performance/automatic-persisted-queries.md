@@ -147,6 +147,22 @@ Our GraphQL server will respond with the query result and indicate that the quer
     }
   }
 }
+
+We got this response : 
+{
+    "data": {
+        "__typename": "Query"
+    },
+    "extensions": {
+        "persistedQuery": {
+            "md5Hash": "71yeex4k3iYWQgg9TilDIg==",
+            "expectedHashValue": "Bu4CtU8VR1RKncO9l/g6ag==",
+            "expectedHashType": "md5Hash",
+            "expectedHashFormat": "Base64",
+            "persisted": false
+        }
+    }
+}
 ```
 
 4. Last but not least, we will verify that we can now use our optimized request by executing our initial request containing only the query hash.
